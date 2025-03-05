@@ -29,13 +29,12 @@ def del_img():
             os.makedirs(img_path)
 
         # delete from database
+        RoomInterior.objects.all().delete()
         """
-        # RoomInterior.objects.all().delete()
-        
         This will only delete the content of the database but id is not reseted.
         so, need to use flush method to completely reset database
+        # call_command("flush", "--no-input")
         """
-        call_command("flush", "--no-input")
 
     except Exception as e:
         print(f"error: {str(e)}")
