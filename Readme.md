@@ -12,3 +12,7 @@ to pack the dependencies use:
 
 To create migrations `python3 manage.py makemigrations`\
 To apply new migrations `python3 manage.py migrate`
+
+## Improvement:
+- deployment
+- 
